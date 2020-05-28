@@ -1,577 +1,2640 @@
-<style>     
-body {    
-  overflow-x:hidden;   
-  background:url()center 43px no-repeat,    
-  url(http://i.imgur.com/R69Fooi.png)no-repeat,     
-  url(http://i.imgur.com/TfUv9aA.png)top center no-repeat,    
-  url()top right no-repeat,     
-  url()top center repeat-x,     
-  url(http://i.imgur.com/yFUKaJr.png)top center repeat #000}     
-  *{font-family:Helvetica}a{color:#0CF !important}    
-  a:hover{color:#08F !important}    
-  *{cursor:url(http://i.imgur.com/WSHGiFi.png),auto}     
-  embed{border-radius: 20px}embed{border:3px solid #36040C}     
-  embed:hover{border:3px solid #36040C}    
-  embed{transition: all ease-in-out 0.5s;    
-}     
-#galli {     
-position:relative;     
-z-index:0;     
-top:34px;     
-right:33;     
-text-indent:9.4in;     
-}     
-#galli img {     
-   transition: all ease-in-out 0.5s;     
-   opacity:0.4;    
-    -webkit-transition: all ease-in-out 0.5s;     
-  -moz-transition: all ease-in-out 0.5s;     
-  -o-transition: all ease-in-out 0.5s;     
-  transition: all ease-in-out 0.5s;     
-}     
-#galli img:hover {     
-  opacity:1;    
- -webkit-transition: all ease-in-out 0.5s;     
-  -moz-transition: all ease-in-out 0.5s;     
-  -o-transition: all ease-in-out 0.5s;     
-  transition: all ease-in-out 0.5s;     
-}     
-a.tooltip {outline:none;}    
-a.tooltip strong {line-height:10px;}    
-a.tooltip:hover {text-decoration:none;}     
-a.tooltip span {    
-    z-index:10;display:none; padding:10px 12px;    
-    position:relative;    
-    right:55px;     
-    top:2px;    
-    width:173px; line-height:16px;    
-}    
-a.tooltip:hover span{    
-    text-align: center;    
-    font-family: Helvetica;    
-    font-size:12px;    
-    display:inline; position:absolute;     
-    border:2px solid #FFF;  color:#FFF;    
-    background:#333 url(http://i.imgur.com/0ysy4rQ.png) repeat-x 0 0;    
-    border:3px solid #444;    
-}    
-.callout {z-index:20;position:absolute;top:7px;border:0;left:199px;}    
-    
-a.tooltip span    
-{border-radius:4px;}    
-    
-a.tooltip2 {outline:none;}    
-a.tooltip2 strong {line-height:10px;}    
-a.tooltip2:hover {text-decoration:none;}     
-a.tooltip2 span {    
-    z-index:10;display:none; padding:10px 12px;    
-    position:relative;    
-    right:55px;     
-    top:3px;    
-    width:103px; line-height:16px;    
-}    
-a.tooltip2:hover span{    
-    text-align: center;    
-    font-family: Helvetica;    
-    font-size:12px;    
-    display:inline; position:absolute;     
-    border:2px solid #FFF;  color:#FFF;    
-    background:#333 url(http://i.imgur.com/0ysy4rQ.png) repeat-x 0 0;    
-    border:3px solid #444;    
-}    
-.callout2 {z-index:20;position:absolute;top:7px;border:0;left:129px;}    
-    
-a.tooltip2 span    
-{ border-radius:4px;}    
-    
-[name=social]{position:absolute}     
-[name=social]{z-index:1}     
-[name=social]{width:64px}     
-[name=social]{top:108px}     
-[name=social]{right:0}     
-img[height='42px']{    
-  -ms-filter:brightness(100%);    
-  -webkit-filter:brightness(100%);     
-  filter:brightness(100%);     
-  -webkit-transition: all ease-in-out 0.5s;     
-  -moz-transition: all ease-in-out 0.5s;     
-  -o-transition: all ease-in-out 0.5s;     
-  transition: all ease-in-out 0.5s;     
-}    
-img[height='42px']:hover {     
--ms-filter:brightness(60%);    
--webkit-filter:brightness(60%);     
-filter:brightness(60%);     
--webkit-transition: all ease-in-out 0.5s;     
-  -moz-transition: all ease-in-out 0.5s;     
-  -o-transition: all ease-in-out 0.5s;     
-  transition: all ease-in-out 0.5s;     
-}     
-[name=social] a{text-decoration:none;}    
-[name=social] a:hover{text-decoration:none;}    
-    
-[name=social2]{position:absolute}     
-[name=social2]{z-index:1}     
-[name=social2]{width:64px}     
-[name=social2]{top:168px}     
-[name=social2]{right:0}     
-[name=social2] a{text-decoration:none;}    
-[name=social2] a:hover{text-decoration:none;}    
-    
-[name=social3]{position:absolute}     
-[name=social3]{z-index:1}     
-[name=social3]{width:64px}     
-[name=social3]{top:510px}     
-[name=social3]{right:0}     
-[name=social3] a{text-decoration:none;}    
-[name=social3] a:hover{text-decoration:none;}    
-    
-[name=social4]{position:absolute}     
-[name=social4]{z-index:1}     
-[name=social4]{width:64px}     
-[name=social4]{top:380px}     
-[name=social4]{right:0}     
-[name=social4] a{text-decoration:none;}    
-[name=social4] a:hover{text-decoration:none;}    
-    
-[name=social5]{-webkit-filter: brightness(0.3);    
-filter:brightness(0.3);}    
-    
-[name=social5]{position:absolute}     
-[name=social5]{z-index:1}     
-[name=social5]{width:64px}     
-[name=social5]{top:320px}     
-[name=social5]{right:0}     
-[name=social5] a{text-decoration:none;}    
-[name=social5] a:hover{text-decoration:none;}    
-    
-#lantern{     
-height:0px;     
-position:relative;     
-top:207px;     
-right:0;     
-text-align:center;     
-text-indent:-8.7in;     
-}     
-#lantern img{     
--webkit-transition: all ease-in-out 0.5s;     
-  -moz-transition: all ease-in-out 0.5s;     
-  -o-transition: all ease-in-out 0.5s;     
-  transition: all ease-in-out 0.5s;     
-  opacity:0;     
-}     
-#lantern img:hover{     
-opacity:1;     
--webkit-transition: all ease-in-out 0.5s;     
-  -moz-transition: all ease-in-out 0.5s;     
-  -o-transition: all ease-in-out 0.5s;     
-  transition: all ease-in-out 0.5s;     
-}     
-#lantern2{     
-height:0px;     
-position:relative;     
-top:207px;     
-right:0;     
-text-align:center;     
-text-indent:9.1in;     
-}     
-#lantern2 img{     
--webkit-transition: all ease-in-out 0.5s;     
-  -moz-transition: all ease-in-out 0.5s;     
-  -o-transition: all ease-in-out 0.5s;     
-  transition: all ease-in-out 0.5s;     
-  opacity:0;     
-}     
-#lantern2 img:hover{     
-opacity:1;     
-  -webkit-transition: all ease-in-out 0.5s;     
-  -moz-transition: all ease-in-out 0.5s;     
-  -o-transition: all ease-in-out 0.5s;     
-  transition: all ease-in-out 0.5s;     
-}     
-embed {           
--webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); /*ios 7 border-radius-bug */           
--webkit-transform: rotate(0.000001deg); /*mac os 10.6 safari 5 border-radius-bug */           
--webkit-border-radius: 6px;            
--moz-border-radius: 6px;           
-border-radius: 6px;            
-overflow: hidden;             
-}             
-#cf p {     
-  position:relative;     
-  top:-10px;     
-  color:white;     
-}     
-#cf p a { text-decoration: none;}     
-#cf p a:hover {color:white;}     
-#cf img {     
-  opacity:0.5;     
-  position:absolute;     
-  -webkit-transition: opacity 1s ease-in-out;     
-  -moz-transition: opacity 1s ease-in-out;     
-  -o-transition: opacity 1s ease-in-out;     
-  transition: opacity 1s ease-in-out;     
-}     
-#cf .bottom:hover {opacity:1;}     
-#player {     
-padding-top: 41px;     
-height:100px;     
-background:url() top 0px center no-repeat;      
-position:relative;     
-top:488px;     
-right:0;     
-text-align:center;     
-}     
-#navbar {     
-  position:absolute;     
-  top:2px;     
-  right:8px;    
-  text-align:right;     
-}     
-#navbar a { text-decoration:none;}    
-    
-#navbar img {     
-  opacity:0.5;    
-  transition: all ease-in-out 0.2s;     
-  }     
-#navbar img:hover {     
-  opacity:1;    
-  transition: all ease-in-out 0.2s;     
-}     
-#editbar a {text-decoration:none;}    
-    
-#editbar{    
-  position:absolute;    
-  top:62px;    
-  right:0px;   
-  left:4px;   
-}    
-#editbar img {     
-  opacity:0.5;    
-  transition: all ease-in-out 0.2s;     
-  }     
-#editbar img:hover {     
-  opacity:1;    
-  transition: all ease-in-out 0.2s;     
-}     
-#logo {    
-  position:absolute;     
-  top:0px;     
-  left:0px;     
-}    
-#moon {     
-position:absolute;     
-opacity:0;    
-z-index:1;     
-top:34px;     
-left:0;     
-text-indent:0.3in;     
-transition: all ease-in-out 0.5s;    
-}     
-#moon:hover {    
-  opacity:1;    
-transition: all ease-in-out 0.5s;    
-}    
-#moon2 {     
-position:absolute;     
-z-index:-2;     
-top:34px;     
-left:0;     
-text-indent:0.3in;     
-}     
-#menu {    
-  overflow:auto;    
-  z-index:2;    
-  xborder-radius:20px;    
-  font-family:Helvetica;    
-  text-align:center;    
-  border:2px solid #444;    
-  position:absolute;    
-  top:300px;    
-  right:0px;    
-  height:270px;    
-  width:120px;    
-  background: rgba(25, 25, 25, 1);    
-  color:#FFF    
-}    
-#menu h1 {    
-  text-align:center;    
-  text-decoration:underline;    
-  font-size:14px;    
-}    
-#menu2 {    
-  overflow:auto;    
-  z-index:2;    
-  xborder-radius:20px;    
-  text-align:center;    
-  border:2px solid #444;    
-  position:absolute;    
-  top:300px;    
-  right:122px;    
-  height:270px;    
-  width:120px;    
-  background: rgba(25, 25, 25, 1);    
-  color:#FFF    
-}    
-#menu2 img {    
-  text-align:center;    
-  opacity:.3;    
-}    
-#menu2 img:hover {    
-  opacity:1;    
-}    
-#menu2 h1 {    
-  text-decoration:underline;    
-  text-align:center;    
-  font-size:14px;    
-}    
-#menugroup{    
-  z-index:2;    
-  position:absolute;    
-  top:20px;    
-  right:-200px;    
-  opacity:0;    
-  transition: all ease-in-out 0.5s;    
-}    
-#menugroup:hover {    
-  z-index:4;    
-  top:20px;    
-  right:0px;    
-  opacity:1;    
-  transition: all ease-in-out 0.5s;    
-}    
-::-webkit-scrollbar {    
-    width: 11px;    
-}    
-     
-/* Track */    
-::-webkit-scrollbar-track {    
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);     
-    -webkit-border-radius: 10px;    
-    border-radius: 10px;    
-}    
-     
-/* Handle */    
-::-webkit-scrollbar-thumb {    
-    -webkit-border-radius: 10px;    
-    border-radius: 10px;    
-    background: rgba(0,0,0,0.8);     
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);     
-}    
-::-webkit-scrollbar-thumb:window-inactive {    
-  background: rgba(15,15,15,0.5);     
-}    
-#hitbox {    
-  opacity:0;    
-  color:#FFF;    
-  z-index:3;    
-  font-family:Helvetica;    
-  text-align:center;    
-  border:2px solid #444;    
-  position:absolute;    
-  top:360px;    
-  right:0px;    
-  height:238px;    
-  width:45px;    
-  background: rgba(25, 25, 25, .5);    
-  color:#FFF    
-}    
-#banner {   
-  position:absolute;    
-  top:111px;    
-  right:713px;   
-  left:0px;   
-}   
-#banner img{   
-  opacity:0.5;   
-  border:3px solid #183f6a;   
-  transition: all ease-in-out 0.5s;    
-}   
-#banner img:hover{   
-  opacity:1;   
-  border:3px solid #215894;   
-  transition: all ease-in-out 0.5s;    
-}   
-#ghost {   
-opacity:0.7;   
-position:absolute;   
-top:0;   
-right:200px;   
-}   
-</style>     
-     
-<body>     
-   
-<td width="0"<img src="ABC" Links cannot contain images  src="ABC" Links cannot contain images  src="ABC" Links cannot contain images  src=""/>   
- <div id="moon">    
-<img src="http://i.imgur.com/dlMdAmp.png" width="255" />    
-</div>    
-<div id="moon2">    
-  <img src="http://i.imgur.com/dlMdAmp.png" width="255" />    
-</div>    
-<div id="logo">    
-<a href="http://xat.com/" target="_blank" ><img src="http://i.imgur.com/Sv28DK3.png"/>    
-</div>    
-<div id="navbar">      
- <a href="http://xat.com/Help_" target="_blank"><img src="http://i.imgur.com/Sv28DK3.png"></a>     
-</div>     
-<div id="lantern">     
-<img src="http://i.imgur.com/dlMdAmp.png"/>     
-</div>     
-<div id="lantern2">     
-  <img src="http://i.imgur.com/dlMdAmp.png"/>     
-</div>     
-<div style="text-align:right" name="social">       
-<a href="http://romskosrce.com" target="_blank" class="tooltip"><img height="42px" src="http://i.imgur.com/eL49XCT.gif"/>      
-<span>      
-<img class="callout" src="http://i.imgur.com/NGytJeJ.gif" />      
-        <strong>Sajt RomskoSrce</strong><br />      
-</span>      
-</div>      
-<div style="text-align:right" name="social2">       
-<a href="http://tinychat.com/romskosrce" target="_blank" class="tooltip2"><img height="42px" src="http://i.imgur.com/eL49XCT.gif"/>      
-<span>      
-<img class="callout2" src="http://i.imgur.com/NGytJeJ.gif" />      
-<strong>Video chat</strong><br />      
-</span>      
-</a>      
-</div>      
-<div id="galli">       
-<img src="http://i.imgur.com/dlMdAmp.png"/>     
-</div>     
-    
-<div id="editbar">     
-<embed width="362" height="20" src="http://player.wavestreamer.com/cgi-bin/player2.swf" type="application/x-shockwave-flash" allowfullscreen="true" allownopeaccess="always" flashvars="Stream&type=sound&file=http://cast.az-streamingserver.com:8475/1/;s.mp3&12873052509&duration=99999&id=scplayer30&width=250&frontcolor=0A0009&backcolor=080001#A80712&lightcolor=&autostart=true"></embed /></div> 
-<div id="player">     
-<div style="text-align: center;">      
-<body> 
-<center> 
-<table border="3" bordercolor="#990000" bgcolor="#990000">                         
-<tr>                         
-<th><font color="#EAF207">Postupak slanja sms-a</font></th>                         
-<th><font color="#EAF207">Brojevi za slanje sms-a</font></th>            
-</tr>                         
-<tr>                         
- <td><center><span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://i.imgur.com/rRjKwtl.png" alt="Vlasnik chata" border="0" /><span class="pns"></span></center> </td>            
-<td><center><span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://i.imgur.com/lHF6mkl.png" alt="Vlasnik chata" border="0" /><span class="pns"></span></center> </td>                   
-</tr>                         
-</table>        
+<style> 
+
+
  
-</center> 
+*{transition:all ease-in-out 0.4s} 
+*{cursor:url(http://i.imgur.com/lqpJdjX.png),auto} 
+@keyframes f{from{opacity:0}to{opacity:1}}html{opacity:0}html{-webkit-animation:f 2.5s ease-in 1 forwards}html{animation:f 2.5s ease-in 1 forwards}
+
+.hdr{padding:0}
+.hdr{left:-24px}
+.hdr{margin:-12}
+.hdr{width:120%}
+.hdr{height:180%}
+.hdr{position:absolute}
+.hdr{z-index:-999}
+.hdr{background: url(http://i.imgur.com/LuWrqUK.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr1{padding:0}
+.hdr1{left:-24px}
+.hdr1{margin:-12}
+.hdr1{width:120%}
+.hdr1{height:180%}
+.hdr1{position:absolute}
+.hdr1{z-index:-999}
+.hdr1{transition:none}
+.hdr1{background: url(http://i.imgur.com/LuWrqUK.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr2{padding:0}
+.hdr2{left:-24px}
+.hdr2{margin:-12}
+.hdr2{width:120%}
+.hdr2{height:180%}
+.hdr2{position:absolute}
+.hdr2{z-index:-999}
+.hdr2{transition:none}
+.hdr2{background: url(http://i.imgur.com/73m0wDQ.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr3{padding:0}
+.hdr3{left:-24px}
+.hdr3{margin:-12}
+.hdr3{width:120%}
+.hdr3{height:180%}
+.hdr3{position:absolute}
+.hdr3{z-index:-999}
+.hdr3{transition:none}
+.hdr3{background: url(http://i.imgur.com/VOXu0rr.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr4{padding:0}
+.hdr4{left:-24px}
+.hdr4{margin:-12}
+.hdr4{width:120%}
+.hdr4{height:180%}
+.hdr4{position:absolute}
+.hdr4{z-index:-999}
+.hdr4{transition:none}
+.hdr4{background: url(http://i.imgur.com/Qb7gAaL.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr5{padding:0}
+.hdr5{left:-24px}
+.hdr5{margin:-12}
+.hdr5{width:120%}
+.hdr5{height:180%}
+.hdr5{position:absolute}
+.hdr5{z-index:-999}
+.hdr5{transition:none}
+.hdr5{background: url(http://i.imgur.com/XgZlOtR.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr6{padding:0}
+.hdr6{left:-24px}
+.hdr6{margin:-12}
+.hdr6{width:120%}
+.hdr6{height:180%}
+.hdr6{position:absolute}
+.hdr6{z-index:-999}
+.hdr6{transition:none}
+.hdr6{background: url(http://i.imgur.com/BIbOVpG.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr7{padding:0}
+.hdr7{left:-24px}
+.hdr7{margin:-12}
+.hdr7{width:120%}
+.hdr7{height:180%}
+.hdr7{position:absolute}
+.hdr7{z-index:-999}
+.hdr7{transition:none}
+.hdr7{background: url(http://i.imgur.com/DaMNpsR.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr8{padding:0}
+.hdr8{left:-24px}
+.hdr8{margin:-12}
+.hdr8{width:120%}
+.hdr8{height:180%}
+.hdr8{position:absolute}
+.hdr8{z-index:-999}
+.hdr8{transition:none}
+.hdr8{background: url(http://i.imgur.com/b3AoHl3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr9{padding:0}
+.hdr9{left:-24px}
+.hdr9{margin:-12}
+.hdr9{width:120%}
+.hdr9{height:180%}
+.hdr9{position:absolute}
+.hdr9{z-index:-999}
+.hdr9{transition:none}
+.hdr9{background: url(http://i.imgur.com/4PHvoN8.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr10{padding:0}
+.hdr10{left:-24px}
+.hdr10{margin:-12}
+.hdr10{width:120%}
+.hdr10{height:180%}
+.hdr10{position:absolute}
+.hdr10{z-index:-999}
+.hdr10{transition:none}
+.hdr10{background: url(http://i.imgur.com/AUaSvJm.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr11{padding:0}
+.hdr11{left:-24px}
+.hdr11{margin:-12}
+.hdr11{width:120%}
+.hdr11{height:180%}
+.hdr11{position:absolute}
+.hdr11{z-index:-999}
+.hdr11{transition:none}
+.hdr11{background: url(http://i.imgur.com/SdDgQ6c.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr12{padding:0}
+.hdr12{left:-24px}
+.hdr12{margin:-12}
+.hdr12{width:120%}
+.hdr12{height:180%}
+.hdr12{position:absolute}
+.hdr12{z-index:-999}
+.hdr12{transition:none}
+.hdr12{background: url(http://i.imgur.com/F0UB0vK.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr13{padding:0}
+.hdr13{left:-24px}
+.hdr13{margin:-12}
+.hdr13{width:120%}
+.hdr13{height:180%}
+.hdr13{position:absolute}
+.hdr13{z-index:-999}
+.hdr13{transition:none}
+.hdr13{background: url(http://i.imgur.com/LNOgBK0.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr14{padding:0}
+.hdr14{left:-24px}
+.hdr14{margin:-12}
+.hdr14{width:120%}
+.hdr14{height:180%}
+.hdr14{position:absolute}
+.hdr14{z-index:-999}
+.hdr14{transition:none}
+.hdr14{background: url(http://i.imgur.com/FVUa63j.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr15{padding:0}
+.hdr15{left:-24px}
+.hdr15{margin:-12}
+.hdr15{width:120%}
+.hdr15{height:180%}
+.hdr15{position:absolute}
+.hdr15{z-index:-999}
+.hdr15{transition:none}
+.hdr15{background: url(http://i.imgur.com/RK2e4M8.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr16{padding:0}
+.hdr16{left:-24px}
+.hdr16{margin:-12}
+.hdr16{width:120%}
+.hdr16{height:180%}
+.hdr16{position:absolute}
+.hdr16{z-index:-999}
+.hdr16{transition:none}
+.hdr16{background: url(http://i.imgur.com/eK9si6J.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr17{padding:0}
+.hdr17{left:-24px}
+.hdr17{margin:-12}
+.hdr17{width:120%}
+.hdr17{height:180%}
+.hdr17{position:absolute}
+.hdr17{z-index:-999}
+.hdr17{transition:none}
+.hdr17{background: url(http://i.imgur.com/mHRwPtQ.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr18{padding:0}
+.hdr18{left:-24px}
+.hdr18{margin:-12}
+.hdr18{width:120%}
+.hdr18{height:180%}
+.hdr18{position:absolute}
+.hdr18{z-index:-999}
+.hdr18{transition:none}
+.hdr18{background: url(http://i.imgur.com/fCJELvd.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr19{padding:0}
+.hdr19{left:-24px}
+.hdr19{margin:-12}
+.hdr19{width:120%}
+.hdr19{height:180%}
+.hdr19{position:absolute}
+.hdr19{z-index:-999}
+.hdr19{transition:none}
+.hdr19{background: url(http://i.imgur.com/wJzCvym.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr20{padding:0}
+.hdr20{left:-24px}
+.hdr20{margin:-12}
+.hdr20{width:120%}
+.hdr20{height:180%}
+.hdr20{position:absolute}
+.hdr20{z-index:-999}
+.hdr20{transition:none}
+.hdr20{background: url(http://i.imgur.com/wFVvsQS.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr21{padding:0}
+.hdr21{left:-24px}
+.hdr21{margin:-12}
+.hdr21{width:120%}
+.hdr21{height:180%}
+.hdr21{position:absolute}
+.hdr21{z-index:-999}
+.hdr21{transition:none}
+.hdr21{background: url(http://i.imgur.com/9ehT0At.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr22{padding:0}
+.hdr22{left:-24px}
+.hdr22{margin:-12}
+.hdr22{width:120%}
+.hdr22{height:180%}
+.hdr22{position:absolute}
+.hdr22{z-index:-999}
+.hdr22{transition:none}
+.hdr22{background: url(http://i.imgur.com/vNcmmca.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr23{padding:0}
+.hdr23{left:-24px}
+.hdr23{margin:-12}
+.hdr23{width:120%}
+.hdr23{height:180%}
+.hdr23{position:absolute}
+.hdr23{z-index:-999}
+.hdr23{transition:none}
+.hdr23{background: url(http://i.imgur.com/OuLAf6I.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr24{padding:0}
+.hdr24{left:-24px}
+.hdr24{margin:-12}
+.hdr24{width:120%}
+.hdr24{height:180%}
+.hdr24{position:absolute}
+.hdr24{z-index:-999}
+.hdr24{transition:none}
+.hdr24{background: url(http://i.imgur.com/7FjSjUP.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr25{padding:0}
+.hdr25{left:-24px}
+.hdr25{margin:-12}
+.hdr25{width:120%}
+.hdr25{height:180%}
+.hdr25{position:absolute}
+.hdr25{z-index:-999}
+.hdr25{transition:none}
+.hdr25{background: url(http://i.imgur.com/CsydzGP.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr26{padding:0}
+.hdr26{left:-24px}
+.hdr26{margin:-12}
+.hdr26{width:120%}
+.hdr26{height:180%}
+.hdr26{position:absolute}
+.hdr26{z-index:-999}
+.hdr26{transition:none}
+.hdr26{background: url(http://i.imgur.com/RUj7iOD.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr27{padding:0}
+.hdr27{left:-24px}
+.hdr27{margin:-12}
+.hdr27{width:120%}
+.hdr27{height:180%}
+.hdr27{position:absolute}
+.hdr27{z-index:-999}
+.hdr27{transition:none}
+.hdr27{background: url(http://i.imgur.com/xe5BD5b.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr28{padding:0}
+.hdr28{left:-24px}
+.hdr28{margin:-12}
+.hdr28{width:120%}
+.hdr28{height:180%}
+.hdr28{position:absolute}
+.hdr28{z-index:-999}
+.hdr28{transition:none}
+.hdr28{background: url(http://i.imgur.com/xJFX0yT.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr29{padding:0}
+.hdr29{left:-24px}
+.hdr29{margin:-12}
+.hdr29{width:120%}
+.hdr29{height:180%}
+.hdr29{position:absolute}
+.hdr29{z-index:-999}
+.hdr29{transition:none}
+.hdr29{background: url(http://i.imgur.com/D6Ja7UE.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hdr30{padding:0}
+.hdr30{left:-24px}
+.hdr30{margin:-12}
+.hdr30{width:120%}
+.hdr30{height:180%}
+.hdr30{position:absolute}
+.hdr30{z-index:-999}
+.hdr30{transition:none}
+.hdr30{background: url(http://i.imgur.com/ybTx6rF.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+[name=header]{padding:0} 
+[name=header]{margin:-8px} 
  
-<center> 
-<table style="width: 910px; height: 3000px;" border="3" width="731" cellspacing="0" cellpadding="5" bgcolor="#990000"> 
-<tbody> 
-<tr> 
-<td align="center"> 
-<p> </p> 
-<div id="page-b0dy"> 
-<div class="wrapper"> 
-<div class="wrapper-1"> 
-<div class="wrapper-2"> 
-<div class="wrapper-3"> 
-<div id="middle"> 
-<div id="middle-expand"> 
-<div id="main"> 
-<div id="main-shift"> 
-<div class="mainmiddle-wrapper-1"> 
-<div class="mainmiddle-wrapper-2"> 
-<div class="mainmiddle-wrapper-3"> 
-<div class="contentleft-bg"> 
-<div class="contentright-bg"> 
-<div id="mainmiddle"> 
-<div id="mainmiddle-expand"> 
-<div id="content"> 
-<div id="content-shift"> 
-<div class="floatbox"> 
-<div class="joomla columns-2 columnwidth-200"> 
-<div class="footer-2"> 
-<h2><span style="font-family: arial black,avant garde; font-size: 12pt;">Upustvo za koristenje chata</span></h2> 
-<h2><span style="font-family: arial black,avant garde; font-size: 12pt;">Pravila ponasanja</span></h2> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Administratori chata imaju u svakom trenutku pravo upozoriti ili izravno ograniciti pristup chat-u korisnicima koji krse bilo koje od sledecih pravila:</span></p> 
+[name=footer]{width:100%} 
+[name=footer]{position:absolute} 
+[name=footer]{bottom:-13px} 
+[name=footer]{padding:0} 
+[name=footer]{margin:0} 
+ 
+[name=editbar]{width:100%}
+[name=editbar]{position:absolute}
+[name=editbar]{top:780px}
+[name=editbar]{padding:0}
+[name=editbar]{margin:0}
+
+body{overflow-x:hidden} 
+body{font-family: 'Lato', sans-serif !important;} 
+p{color:#FFF;
+ text-shadow: 1px 1px 1px #000;}
+
+[name=header] ul { 
+    box-shadow:0 0 10px#000; 
+    list-style-type: none; 
+    margin: -0; 
+    padding: 0; 
+    overflow: hidden; 
+    background:rgba(255,255,255, 0.25); 
+    border-bottom:1px solid #999; 
+}
+
+[name=header] ul:before{opacity:1}
+[name=header] ul:before{position:absolute}
+[name=header] ul:before{top:0}
+[name=header] ul:before{bottom:0}
+[name=header] ul:before{left:-50px}
+[name=header] ul:before{z-index:-31}
+[name=header] ul:before {content:""}
+[name=header] ul:before{width:520%}
+[name=header] ul:before{height:25px}
+[name=header] ul:before{background:rgba(255,255,255,0.33)}
+
+[name=footer] ul:before{opacity:1}
+[name=footer] ul:before{position:absolute}
+[name=footer] ul:before{top:0}
+[name=footer] ul:before{bottom:0}
+[name=footer] ul:before{left:-50px}
+[name=footer] ul:before{z-index:-31}
+[name=footer] ul:before {content:""}
+[name=footer] ul:before{width:520%}
+[name=footer] ul:before{height:37px}
+[name=footer] ul:before{background:rgba(255,255,255,0.23)}
+
+[name=editbar] ul:before{opacity:1}
+[name=editbar] ul:before{position:absolute}
+[name=editbar] ul:before{top:-8px}
+[name=editbar] ul:before{bottom:0}
+[name=editbar] ul:before{left:-50px}
+[name=editbar] ul:before{z-index:-31}
+[name=editbar] ul:before {content:""}
+[name=editbar] ul:before{width:520%}
+[name=editbar] ul:before{height:18px}
+[name=editbar] ul:before{background:rgba(255,255,255,0.23)}
+
+
+[name=footer] ul { 
+    box-shadow:0 0 10px#000; 
+    list-style-type: none; 
+    margin: -9px; 
+    padding: 0; 
+    overflow: hidden; 
+    background:rgba(255,255,255, 0.1); 
+    border:1px solid #999; 
+} 
+ 
+[name=editbar] ul { 
+    box-shadow:0 0 10px#000; 
+    list-style-type: none; 
+    margin: -9px; 
+    padding: 0; 
+    overflow: hidden; 
+   background:rgba(255,255,255, 0.1); 
+   border:1px solid #999; 
+} 
+ 
+[name=editbar] li { 
+    float: right; 
+} 
+[name=editbar] li a {position:relative;
+top:2px;
+}
+[name=header] li { 
+    float: right; 
+} 
+ 
+[name=header] li a { 
+    font-size: 12px; 
+    font-weight: bold; 
+    display: block; 
+ 
+    text-align: center; 
+    padding: 17px 12px; 
+    text-decoration: none; 
+} 
+ 
+[name=header] li a:hover { 
+    color: #08C; 
+} 
+
+[name=header] .dropdown-content a {
+    color: white;
+}
+
+[name=header] .dropdown-content a:hover {
+    color: white;
+}
+
+[name=header] a.enable {color:white}
+
+[name=header] a.enable:hover {color:white}
+
+[name=header] .enable.active {
+background-color: rgba(0, 0, 0, .7)
+}
+ 
+[name=editbar] li a { 
+    font-size: 11px; 
+    font-weight: bold; 
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 8px 16px; 
+    text-decoration: none; 
+} 
+[name=editbar] li a:hover { 
+  color: #AAA; 
+} 
+ 
+[name=footer] { 
+  margin: 0; 
+  width:100%; 
+  position: relative; 
+  right: 0; 
+  bottom: -10px; 
+  left: 0; 
+  text-align: center; 
+} 
+ 
+[name=footer] li { 
+    display:inline-block; 
+} 
+ 
+[name=footer] li a { 
+    font-size: 12px; 
+    display: block; 
+    color: #white; 
+    text-align: center; 
+    padding: 17px 5px; 
+    text-decoration: none; 
+} 
+[name=footer] li a:hover { 
+  color: #08C; 
+} 
+ 
+[name=footer] p{padding-top:5px} 
+[name=footer] p{margin:0} 
+[name=footer] p{top:-11px} 
+[name=footer] p{position:relative} 
+[name=footer] p{font-size:13px} 
+ 
+[name=header] img{position:absolute}
+[name=header] img{left:-3px}
+[name=header] img{padding:8px}
+[name=header] img{height:31px}
+ 
+li a, .dropbtn { 
+    display: inline-block; 
+ text-shadow: 1px 2px 1px #000;
+    color: #0CF; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+} 
+
+li a:hover {  
+    opacity:0.7;
+} 
+ 
+li.dropdown { 
+    display: inline-block; 
+} 
+ 
+.dropdown-content { 
+    height:320px;
+    overflow:auto;
+    auto;
+    z-index:999;
+    right:0px; 
+    display: none; 
+    position: absolute; 
+    background:rgba(50,50,50, 0.8); 
+    border:1px solid #999; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+} 
+ 
+.dropdown-content a{ 
+  border-left: 2px solid rgba(0, 0, 0, .5); 
+  border-right: 2px solid rgba(0, 0, 0, .5); 
+  border-bottom: 2px solid rgba(0, 0, 0, .5); 
+} 
+ 
+.dropdown-content a { 
+    color: black; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
+    text-align: left; 
+} 
+
+.dropdown-content a:hover {background-color: rgba(0, 155, 255, .7)} 
+ 
+.dropdown:hover .dropdown-content { 
+    display: block; 
+} 
+
+a.enable {color:white} 
+
+a.strike {text-decoration:line-through!important}
+a.strike {color:#555}
+a.strike:hover {color:#555!important}
+
+h1 {
+ text-shadow: 1px 2px 1px #000;
+  margin:0px;
+  top:9px;
+  left:117px;
+  position:absolute;
+  font-size: 31px;
+  color:#0CF;
+}
+
+.arrow-down {
+  right:9px;
+  top:23px;
+  position:absolute;
+  margin:0;
+  padding:0;
+  width: 0; 
+  height: 0; 
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #999;
+}
+
+.arrow-down2 {
+  right:107px;
+  top:23px;
+  position:absolute;
+  margin:0;
+  padding:0;
+  width: 0; 
+  height: 0; 
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #999;
+}
+ 
+[name=footer] a{text-decoration:none}
+[name=footer] a{color:#0CF}
+[name=footer] a:hover{color:#09F}
+
+[name=banner]{z-index:-3}
+[name=banner]{width:200px}
+[name=banner]{height:200px}
+[name=banner]{position:absolute}
+[name=banner]{top:75px}
+[name=banner]{right:10px}
+[name=banner] img{-webkit-box-reflect: below 1px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.4) 0%, transparent 14%, transparent 100%)};
+
+[name=bannerimg]{z-index:-3}
+[name=bannerimg]{position:absolute}
+[name=bannerimg]{top:160px}
+[name=bannerimg]{right:45px}
+[name=bannerimg] img:hover{-webkit-filter: grayscale(1);}
+[name=bannerimg] img:hover{transform: rotate(20deg);}
+
+[name=speech]{z-index:-3}
+[name=speech]{position:absolute}
+[name=speech]{top:159px}
+[name=speech]{right:145px}
+
+[name=alice]{z-index:0}
+[name=alice]{position:absolute}
+[name=alice]{top:139px}
+[name=alice]{left:76px}
+
+[name=alice] img{border-radius:550px}
+[name=alice] img{box-shadow:0 0 10px#000}
+[name=alice] img{border: 2px solid rgba(255, 255, 2555,.3)}
+[name=alice] img:hover{transform: rotate(361deg);}
+
+[name=apps]{position:absolute}
+[name=apps]{top:75px}
+[name=apps]{left:0px}
+[name=metroid]{display:none}
+[name=metroid]{position:fixed}
+[name=metroid]{top:530px}
+[name=metroid]{right:10px}
+
+[name=metroid]:hover{transform: scale(2, 2)}
+[name=metroid]:hover{position:absolute}
+[name=metroid]:hover{top:530px}
+[name=metroid]:hover{right:59px}
+
+[name=door]{position:fixed}
+[name=door]{top:550px}
+[name=door]{right:30px}
+
+[name=vase]{position:fixed}
+[name=vase]{top:532px}
+[name=vase]{right:60px}
+  
+[name=egg]{position:fixed}
+[name=egg]{top:872px}
+[name=egg]{left:0px}
+[name=egg]{opacity:0}
+[name=egg]:hover{opacity:1}
+
+[name=selector]{background:#FFF}
+[name=selector]{width:100px}
+[name=selector]{height:200px}
+[name=selector]{position:absolute}
+[name=selector]{top:150px}
+[name=selector]{right:150px}
+
+[name=selector2]{background:none}
+[name=selector2]{width:400px}
+[name=selector2]{height:200px}
+[name=selector2]{position:absolute}
+[name=selector2]{top:150px}
+[name=selector2]{right:350px}
+
+#col1{
+display:inline-block;
+border:1px solid #ccc;
+background:magenta;
+width:13px;
+height:13px;
+}
+#col2{
+display:inline-block;
+border:1px solid #ccc;
+background:yellow;
+width:13px;
+height:13px;
+}
+#col3{
+display:inline-block;
+border:1px solid #ccc;
+background:green;
+width:13px;
+height:13px;
+}
+#col4{
+display:inline-block;
+border:1px solid #ccc;
+background:white;
+width:13px;
+height:13px;
+}
+#col5{
+display:inline-block;
+border:1px solid #ccc;
+background:red;
+width:13px;
+height:13px;
+}
+#col6{
+display:inline-block;
+border:1px solid #ccc;
+background:#0CF;
+width:13px;
+height:13px;
+}
+#col7{
+display:inline-block;
+border:1px solid #ccc;
+background:orange;
+width:13px;
+height:13px;
+}
+
+[name=chatbox]{display:none}
+[name=chatbox]{box-shadow:0 0 10px#000}
+[name=chatbox]{width:728px}
+[name=chatbox]{height:486px}
+[name=chatbox]{position:absolute}
+[name=chatbox]{top:110!important}
+[name=chatbox]{left:0!important}
+[name=chatbox]{right:0!important}
+[name=chatbox]{margin: auto}
+
+[name=chatbox] img{margin:auto}
+[name=btwside]{opacity:1}
+[name=btwside]{position:absolute}
+[name=btwside]{top:2px}
+[name=btwside]{left:0}
+[name=btwside]{z-index:-44}
+</style> 
+ 
+<td width="0"<img src="ABC" Links cannot contain images  src="ABC" Links cannot contain images  src="ABC"<a href="EFG"/>  
+<td width="0"<img src="CDE"<a href="HIJ"/>  
+<td width="0"<img src="FGH"<a href="KLM"/>  
+<td width="0"<img src="MNO"<a href="PQR"/>  
+<td width="0"<img src="STU"<a href="VWX"/>  
+<td width="0"<img src="YZ1"<a href="234"/>  
+
+<div id="hdr" class="hdr1"></div>
+</div>
+
+<div name="btwside">
+<img src="http://i.imgur.com/4qHBblb.png"/>
+</div>
+
+
+<script>
+//Function for setting dynamic color for each background option//
+function opt1() {
+    document.getElementById("themes").style.color = "#0CF";
+  document.getElementById("title").style.color = "#0CF";
+  document.getElementById("help").style.color = "#0CF";
+	document.getElementById("trade").style.color = "#0CF";
+	document.getElementById("news").style.color = "#0CF";
+	document.getElementById("store").style.color = "#0CF";
+	document.getElementById("groups").style.color = "#0CF";
+	document.getElementById("inap").style.color = "#0CF";
+	document.getElementById("message").style.color = "#0CF";
+	document.getElementById("events").style.color = "#0CF";
+	document.getElementById("edit").style.color = "#0CF";
+	document.getElementById("embed").style.color = "#0CF";
+	document.getElementById("promote").style.color = "#0CF";
+    document.getElementById("wiki").style.color = "#0CF";
+	document.getElementById("privacy").style.color = "#0CF";
+	document.getElementById("terms").style.color = "#0CF";
+	document.getElementById("safety").style.color = "#0CF";
+	document.getElementById("support").style.color = "#0CF";
+	document.getElementById("contact").style.color = "#0CF";
+}
+function opt2() {
+    document.getElementById("themes").style.color = "#83f1ca";
+	document.getElementById("title").style.color = "#83f1ca";
+	document.getElementById("help").style.color = "#83f1ca";
+	document.getElementById("trade").style.color = "#83f1ca";
+	document.getElementById("news").style.color = "#83f1ca";
+	document.getElementById("store").style.color = "#83f1ca";
+	document.getElementById("groups").style.color = "#83f1ca";
+	document.getElementById("inap").style.color = "#83f1ca";
+	document.getElementById("message").style.color = "#83f1ca";
+	document.getElementById("events").style.color = "#83f1ca";
+	document.getElementById("edit").style.color = "#83f1ca";
+	document.getElementById("embed").style.color = "#83f1ca";
+	document.getElementById("promote").style.color = "#83f1ca";
+    document.getElementById("wiki").style.color = "#83f1ca";
+	document.getElementById("privacy").style.color = "#83f1ca";
+	document.getElementById("terms").style.color = "#83f1ca";
+	document.getElementById("safety").style.color = "#83f1ca";
+	document.getElementById("support").style.color = "#83f1ca";
+	document.getElementById("contact").style.color = "#83f1ca";
+}
+function opt3() {
+    document.getElementById("themes").style.color = "#ffcdb8";
+	document.getElementById("title").style.color = "#ffcdb8";
+	document.getElementById("help").style.color = "#ffcdb8";
+	document.getElementById("trade").style.color = "#ffcdb8";
+	document.getElementById("news").style.color = "#ffcdb8";
+	document.getElementById("store").style.color = "#ffcdb8";
+	document.getElementById("groups").style.color = "#ffcdb8";
+	document.getElementById("inap").style.color = "#ffcdb8";
+	document.getElementById("message").style.color = "#ffcdb8";
+	document.getElementById("events").style.color = "#ffcdb8";
+	document.getElementById("edit").style.color = "#ffcdb8";
+	document.getElementById("embed").style.color = "#ffcdb8";
+	document.getElementById("promote").style.color = "#ffcdb8";
+    document.getElementById("wiki").style.color = "#ffcdb8";
+	document.getElementById("privacy").style.color = "#ffcdb8";
+	document.getElementById("terms").style.color = "#ffcdb8";
+	document.getElementById("safety").style.color = "#ffcdb8";
+	document.getElementById("support").style.color = "#ffcdb8";
+	document.getElementById("contact").style.color = "#ffcdb8";
+}
+function opt4() {
+    document.getElementById("themes").style.color = "#eef3f6";
+	document.getElementById("title").style.color = "#eef3f6";
+	document.getElementById("help").style.color = "#eef3f6";
+	document.getElementById("trade").style.color = "#eef3f6";
+	document.getElementById("news").style.color = "#eef3f6";
+	document.getElementById("store").style.color = "#eef3f6";
+	document.getElementById("groups").style.color = "#eef3f6";
+	document.getElementById("inap").style.color = "#eef3f6";
+	document.getElementById("message").style.color = "#eef3f6";
+	document.getElementById("events").style.color = "#eef3f6";
+	document.getElementById("edit").style.color = "#eef3f6";
+	document.getElementById("embed").style.color = "#eef3f6";
+	document.getElementById("promote").style.color = "#eef3f6";
+    document.getElementById("wiki").style.color = "#eef3f6";
+	document.getElementById("privacy").style.color = "#eef3f6";
+	document.getElementById("terms").style.color = "#eef3f6";
+	document.getElementById("safety").style.color = "#eef3f6";
+	document.getElementById("support").style.color = "#eef3f6";
+	document.getElementById("contact").style.color = "#eef3f6";
+}
+function opt5() {
+    document.getElementById("themes").style.color = "#b5c8e9";
+	document.getElementById("title").style.color = "#b5c8e9";
+	document.getElementById("help").style.color = "#b5c8e9";
+	document.getElementById("trade").style.color = "#b5c8e9";
+	document.getElementById("news").style.color = "#b5c8e9";
+	document.getElementById("store").style.color = "#b5c8e9";
+	document.getElementById("groups").style.color = "#b5c8e9";
+	document.getElementById("inap").style.color = "#b5c8e9";
+	document.getElementById("message").style.color = "#b5c8e9";
+	document.getElementById("events").style.color = "#b5c8e9";
+	document.getElementById("edit").style.color = "#b5c8e9";
+	document.getElementById("embed").style.color = "#b5c8e9";
+	document.getElementById("promote").style.color = "#b5c8e9";
+    document.getElementById("wiki").style.color = "#b5c8e9";
+	document.getElementById("privacy").style.color = "#b5c8e9";
+	document.getElementById("terms").style.color = "#b5c8e9";
+	document.getElementById("safety").style.color = "#b5c8e9";
+	document.getElementById("support").style.color = "#b5c8e9";
+	document.getElementById("contact").style.color = "#b5c8e9";
+}
+function opt6() {
+    document.getElementById("themes").style.color = "#fef4e8";
+	document.getElementById("title").style.color = "#fef4e8";
+	document.getElementById("help").style.color = "#fef4e8";
+	document.getElementById("trade").style.color = "#fef4e8";
+	document.getElementById("news").style.color = "#fef4e8";
+	document.getElementById("store").style.color = "#fef4e8";
+	document.getElementById("groups").style.color = "#fef4e8";
+	document.getElementById("inap").style.color = "#fef4e8";
+	document.getElementById("message").style.color = "#fef4e8";
+	document.getElementById("events").style.color = "#fef4e8";
+	document.getElementById("edit").style.color = "#fef4e8";
+	document.getElementById("embed").style.color = "#fef4e8";
+	document.getElementById("promote").style.color = "#fef4e8";
+    document.getElementById("wiki").style.color = "#fef4e8";
+	document.getElementById("privacy").style.color = "#fef4e8";
+	document.getElementById("terms").style.color = "#fef4e8";
+	document.getElementById("safety").style.color = "#fef4e8";
+	document.getElementById("support").style.color = "#fef4e8";
+	document.getElementById("contact").style.color = "#fef4e8";
+}
+function opt7() {
+    document.getElementById("themes").style.color = "#EEEEEE";
+	document.getElementById("title").style.color = "#EEEEEE";
+	document.getElementById("help").style.color = "#EEEEEE";
+	document.getElementById("trade").style.color = "#EEEEEE";
+	document.getElementById("news").style.color = "#EEEEEE";
+	document.getElementById("store").style.color = "#EEEEEE";
+	document.getElementById("groups").style.color = "#EEEEEE";
+	document.getElementById("inap").style.color = "#EEEEEE";
+	document.getElementById("message").style.color = "#EEEEEE";
+	document.getElementById("events").style.color = "#EEEEEE";
+	document.getElementById("edit").style.color = "#EEEEEE";
+	document.getElementById("embed").style.color = "#EEEEEE";
+	document.getElementById("promote").style.color = "#EEEEEE";
+    document.getElementById("wiki").style.color = "#EEEEEE";
+	document.getElementById("privacy").style.color = "#EEEEEE";
+	document.getElementById("terms").style.color = "#EEEEEE";
+	document.getElementById("safety").style.color = "#EEEEEE";
+	document.getElementById("support").style.color = "#EEEEEE";
+	document.getElementById("contact").style.color = "#EEEEEE";
+}
+function opt8() {
+    document.getElementById("themes").style.color = "fbfbd5";
+	document.getElementById("title").style.color = "#fbfbd5";
+	document.getElementById("help").style.color = "#fbfbd5";
+	document.getElementById("trade").style.color = "#fbfbd5";
+	document.getElementById("news").style.color = "#fbfbd5";
+	document.getElementById("store").style.color = "#fbfbd5";
+	document.getElementById("groups").style.color = "#fbfbd5";
+	document.getElementById("inap").style.color = "#fbfbd5";
+	document.getElementById("message").style.color = "#fbfbd5";
+	document.getElementById("events").style.color = "#fbfbd5";
+	document.getElementById("edit").style.color = "#fbfbd5";
+	document.getElementById("embed").style.color = "#fbfbd5";
+	document.getElementById("promote").style.color = "#fbfbd5";
+    document.getElementById("wiki").style.color = "#fbfbd5";
+	document.getElementById("privacy").style.color = "#fbfbd5";
+	document.getElementById("terms").style.color = "#fbfbd5";
+	document.getElementById("safety").style.color = "#fbfbd5";
+	document.getElementById("support").style.color = "#fbfbd5";
+	document.getElementById("contact").style.color = "#fbfbd5";
+}
+function opt9() {
+    document.getElementById("themes").style.color = "#7cdcf4";
+	document.getElementById("title").style.color = "#7cdcf4";
+	document.getElementById("help").style.color = "#7cdcf4";
+	document.getElementById("trade").style.color = "#7cdcf4";
+	document.getElementById("news").style.color = "#7cdcf4";
+	document.getElementById("store").style.color = "#7cdcf4";
+	document.getElementById("groups").style.color = "#7cdcf4";
+	document.getElementById("inap").style.color = "#7cdcf4";
+	document.getElementById("message").style.color = "#7cdcf4";
+	document.getElementById("events").style.color = "#7cdcf4";
+	document.getElementById("edit").style.color = "#7cdcf4";
+	document.getElementById("embed").style.color = "#7cdcf4";
+	document.getElementById("promote").style.color = "#7cdcf4";
+    document.getElementById("wiki").style.color = "#7cdcf4";
+	document.getElementById("privacy").style.color = "#7cdcf4";
+	document.getElementById("terms").style.color = "#7cdcf4";
+	document.getElementById("safety").style.color = "#7cdcf4";
+	document.getElementById("support").style.color = "#7cdcf4";
+	document.getElementById("contact").style.color = "#7cdcf4";
+}
+function opt10() {
+    document.getElementById("themes").style.color = "#f7887d";
+	document.getElementById("title").style.color = "#f7887d";
+	document.getElementById("help").style.color = "#f7887d";
+	document.getElementById("trade").style.color = "#f7887d";
+	document.getElementById("news").style.color = "#f7887d";
+	document.getElementById("store").style.color = "#f7887d";
+	document.getElementById("groups").style.color = "#f7887d";
+	document.getElementById("inap").style.color = "#f7887d";
+	document.getElementById("message").style.color = "#f7887d";
+	document.getElementById("events").style.color = "#f7887d";
+	document.getElementById("edit").style.color = "#f7887d";
+	document.getElementById("embed").style.color = "#f7887d";
+	document.getElementById("promote").style.color = "#f7887d";
+    document.getElementById("wiki").style.color = "#f7887d";
+	document.getElementById("privacy").style.color = "#f7887d";
+	document.getElementById("terms").style.color = "#f7887d";
+	document.getElementById("safety").style.color = "#f7887d";
+	document.getElementById("support").style.color = "#f7887d";
+	document.getElementById("contact").style.color = "#f7887d";
+}
+function opt11() {
+    document.getElementById("themes").style.color = "#f1d3c9";
+	document.getElementById("title").style.color = "#f1d3c9";
+	document.getElementById("help").style.color = "#f1d3c9";
+	document.getElementById("trade").style.color = "#f1d3c9";
+	document.getElementById("news").style.color = "#f1d3c9";
+	document.getElementById("store").style.color = "#f1d3c9";
+	document.getElementById("groups").style.color = "#f1d3c9";
+	document.getElementById("inap").style.color = "#f1d3c9";
+	document.getElementById("message").style.color = "#f1d3c9";
+	document.getElementById("events").style.color = "#f1d3c9";
+	document.getElementById("edit").style.color = "#f1d3c9";
+	document.getElementById("embed").style.color = "#f1d3c9";
+	document.getElementById("promote").style.color = "#f1d3c9";
+    document.getElementById("wiki").style.color = "#f1d3c9";
+	document.getElementById("privacy").style.color = "#f1d3c9";
+	document.getElementById("terms").style.color = "#f1d3c9";
+	document.getElementById("safety").style.color = "#f1d3c9";
+	document.getElementById("support").style.color = "#f1d3c9";
+	document.getElementById("contact").style.color = "#f1d3c9";
+}
+function opt12() {
+    document.getElementById("themes").style.color = "#DD867B";
+	document.getElementById("title").style.color = "#DD867B";
+	document.getElementById("help").style.color = "#DD867B";
+	document.getElementById("trade").style.color = "#DD867B";
+	document.getElementById("news").style.color = "#DD867B";
+	document.getElementById("store").style.color = "#DD867B";
+	document.getElementById("groups").style.color = "#DD867B";
+	document.getElementById("inap").style.color = "#DD867B";
+	document.getElementById("message").style.color = "#DD867B";
+	document.getElementById("events").style.color = "#DD867B";
+	document.getElementById("edit").style.color = "#DD867B";
+	document.getElementById("embed").style.color = "#DD867B";
+	document.getElementById("promote").style.color = "#DD867B";
+    document.getElementById("wiki").style.color = "#DD867B";
+	document.getElementById("privacy").style.color = "#DD867B";
+	document.getElementById("terms").style.color = "#DD867B";
+	document.getElementById("safety").style.color = "#DD867B";
+	document.getElementById("support").style.color = "#DD867B";
+	document.getElementById("contact").style.color = "#DD867B";
+}
+function opt13() {
+    document.getElementById("themes").style.color = "#D8C79B";
+	document.getElementById("title").style.color = "#D8C79B";
+	document.getElementById("help").style.color = "#D8C79B";
+	document.getElementById("trade").style.color = "#D8C79B";
+	document.getElementById("news").style.color = "#D8C79B";
+	document.getElementById("store").style.color = "#D8C79B";
+	document.getElementById("groups").style.color = "#D8C79B";
+	document.getElementById("inap").style.color = "#D8C79B";
+	document.getElementById("message").style.color = "#D8C79B";
+	document.getElementById("events").style.color = "#D8C79B";
+	document.getElementById("edit").style.color = "#D8C79B";
+	document.getElementById("embed").style.color = "#D8C79B";
+	document.getElementById("promote").style.color = "#D8C79B";
+    document.getElementById("wiki").style.color = "#D8C79B";
+	document.getElementById("privacy").style.color = "#D8C79B";
+	document.getElementById("terms").style.color = "#D8C79B";
+	document.getElementById("safety").style.color = "#D8C79B";
+	document.getElementById("support").style.color = "#D8C79B";
+	document.getElementById("contact").style.color = "#D8C79B";
+}
+function opt14() {
+    document.getElementById("themes").style.color = "#ffc48b";
+	document.getElementById("title").style.color = "#ffc48b";
+	document.getElementById("help").style.color = "#ffc48b";
+	document.getElementById("trade").style.color = "#ffc48b";
+	document.getElementById("news").style.color = "#ffc48b";
+	document.getElementById("store").style.color = "#ffc48b";
+	document.getElementById("groups").style.color = "#ffc48b";
+	document.getElementById("inap").style.color = "#ffc48b";
+	document.getElementById("message").style.color = "#ffc48b";
+	document.getElementById("events").style.color = "#ffc48b";
+	document.getElementById("edit").style.color = "#ffc48b";
+	document.getElementById("embed").style.color = "#ffc48b";
+	document.getElementById("promote").style.color = "#ffc48b";
+    document.getElementById("wiki").style.color = "#ffc48b";
+	document.getElementById("privacy").style.color = "#ffc48b";
+	document.getElementById("terms").style.color = "#ffc48b";
+	document.getElementById("safety").style.color = "#ffc48b";
+	document.getElementById("support").style.color = "#ffc48b";
+	document.getElementById("contact").style.color = "#ffc48b";
+}
+function opt15() {
+    document.getElementById("themes").style.color = "#f7bb5b";
+	document.getElementById("title").style.color = "#f7bb5b";
+	document.getElementById("help").style.color = "#f7bb5b";
+	document.getElementById("trade").style.color = "#f7bb5b";
+	document.getElementById("news").style.color = "#f7bb5b";
+	document.getElementById("store").style.color = "#f7bb5b";
+	document.getElementById("groups").style.color = "#f7bb5b";
+	document.getElementById("inap").style.color = "#f7bb5b";
+	document.getElementById("message").style.color = "#f7bb5b";
+	document.getElementById("events").style.color = "#f7bb5b";
+	document.getElementById("edit").style.color = "#f7bb5b";
+	document.getElementById("embed").style.color = "#f7bb5b";
+	document.getElementById("promote").style.color = "#f7bb5b";
+    document.getElementById("wiki").style.color = "#f7bb5b";
+	document.getElementById("privacy").style.color = "#f7bb5b";
+	document.getElementById("terms").style.color = "#f7bb5b";
+	document.getElementById("safety").style.color = "#f7bb5b";
+	document.getElementById("support").style.color = "#f7bb5b";
+	document.getElementById("contact").style.color = "#f7bb5b";
+}
+function opt16() {
+    document.getElementById("themes").style.color = "#fed384";
+	document.getElementById("title").style.color = "#fed384";
+	document.getElementById("help").style.color = "#fed384";
+	document.getElementById("trade").style.color = "#fed384";
+	document.getElementById("news").style.color = "#fed384";
+	document.getElementById("store").style.color = "#fed384";
+	document.getElementById("groups").style.color = "#fed384";
+	document.getElementById("inap").style.color = "#fed384";
+	document.getElementById("message").style.color = "#fed384";
+	document.getElementById("events").style.color = "#fed384";
+	document.getElementById("edit").style.color = "#fed384";
+	document.getElementById("embed").style.color = "#fed384";
+	document.getElementById("promote").style.color = "#fed384";
+    document.getElementById("wiki").style.color = "#fed384";
+	document.getElementById("privacy").style.color = "#fed384";
+	document.getElementById("terms").style.color = "#fed384";
+	document.getElementById("safety").style.color = "#fed384";
+	document.getElementById("support").style.color = "#fed384";
+	document.getElementById("contact").style.color = "#fed384";
+}
+function opt17() {
+    document.getElementById("themes").style.color = "#b17841";
+	document.getElementById("title").style.color = "#b17841";
+	document.getElementById("help").style.color = "#b17841";
+	document.getElementById("trade").style.color = "#b17841";
+	document.getElementById("news").style.color = "#b17841";
+	document.getElementById("store").style.color = "#b17841";
+	document.getElementById("groups").style.color = "#b17841";
+	document.getElementById("inap").style.color = "#b17841";
+	document.getElementById("message").style.color = "#b17841";
+	document.getElementById("events").style.color = "#b17841";
+	document.getElementById("edit").style.color = "#b17841";
+	document.getElementById("embed").style.color = "#b17841";
+	document.getElementById("promote").style.color = "#b17841";
+    document.getElementById("wiki").style.color = "#b17841";
+	document.getElementById("privacy").style.color = "#b17841";
+	document.getElementById("terms").style.color = "#b17841";
+	document.getElementById("safety").style.color = "#b17841";
+	document.getElementById("support").style.color = "#b17841";
+	document.getElementById("contact").style.color = "#b17841";
+}
+function opt18() {
+    document.getElementById("themes").style.color = "#C9BCBC";
+	document.getElementById("title").style.color = "#C9BCBC";
+	document.getElementById("help").style.color = "#C9BCBC";
+	document.getElementById("trade").style.color = "#C9BCBC";
+	document.getElementById("news").style.color = "#C9BCBC";
+	document.getElementById("store").style.color = "#C9BCBC";
+	document.getElementById("groups").style.color = "#C9BCBC";
+	document.getElementById("inap").style.color = "#C9BCBC";
+	document.getElementById("message").style.color = "#C9BCBC";
+	document.getElementById("events").style.color = "#C9BCBC";
+	document.getElementById("edit").style.color = "#C9BCBC";
+	document.getElementById("embed").style.color = "#C9BCBC";
+	document.getElementById("promote").style.color = "#C9BCBC";
+    document.getElementById("wiki").style.color = "#C9BCBC";
+	document.getElementById("privacy").style.color = "#C9BCBC";
+	document.getElementById("terms").style.color = "#C9BCBC";
+	document.getElementById("safety").style.color = "#C9BCBC";
+	document.getElementById("support").style.color = "#C9BCBC";
+	document.getElementById("contact").style.color = "#C9BCBC";
+}
+function opt19() {
+    document.getElementById("themes").style.color = "#d2e9fb";
+	document.getElementById("title").style.color = "#d2e9fb";
+	document.getElementById("help").style.color = "#d2e9fb";
+	document.getElementById("trade").style.color = "#d2e9fb";
+	document.getElementById("news").style.color = "#d2e9fb";
+	document.getElementById("store").style.color = "#d2e9fb";
+	document.getElementById("groups").style.color = "#d2e9fb";
+	document.getElementById("inap").style.color = "#d2e9fb";
+	document.getElementById("message").style.color = "#d2e9fb";
+	document.getElementById("events").style.color = "#d2e9fb";
+	document.getElementById("edit").style.color = "#d2e9fb";
+	document.getElementById("embed").style.color = "#d2e9fb";
+	document.getElementById("promote").style.color = "#d2e9fb";
+    document.getElementById("wiki").style.color = "#d2e9fb";
+	document.getElementById("privacy").style.color = "#d2e9fb";
+	document.getElementById("terms").style.color = "#d2e9fb";
+	document.getElementById("safety").style.color = "#d2e9fb";
+	document.getElementById("support").style.color = "#d2e9fb";
+	document.getElementById("contact").style.color = "#d2e9fb";
+}
+function opt20() {
+    document.getElementById("themes").style.color = "#f8d342";
+	document.getElementById("title").style.color = "#f8d342";
+	document.getElementById("help").style.color = "#f8d342";
+	document.getElementById("trade").style.color = "#f8d342";
+	document.getElementById("news").style.color = "#f8d342";
+	document.getElementById("store").style.color = "#f8d342";
+	document.getElementById("groups").style.color = "#f8d342";
+	document.getElementById("inap").style.color = "#f8d342";
+	document.getElementById("message").style.color = "#f8d342";
+	document.getElementById("events").style.color = "#f8d342";
+	document.getElementById("edit").style.color = "#f8d342";
+	document.getElementById("embed").style.color = "#f8d342";
+	document.getElementById("promote").style.color = "#f8d342";
+    document.getElementById("wiki").style.color = "#f8d342";
+	document.getElementById("privacy").style.color = "#f8d342";
+	document.getElementById("terms").style.color = "#f8d342";
+	document.getElementById("safety").style.color = "#f8d342";
+	document.getElementById("support").style.color = "#f8d342";
+	document.getElementById("contact").style.color = "#f8d342";
+}
+function opt21() {
+    document.getElementById("themes").style.color = "#82c3eb";
+	document.getElementById("title").style.color = "#82c3eb";
+	document.getElementById("help").style.color = "#82c3eb";
+	document.getElementById("trade").style.color = "#82c3eb";
+	document.getElementById("news").style.color = "#82c3eb";
+	document.getElementById("store").style.color = "#82c3eb";
+	document.getElementById("groups").style.color = "#82c3eb";
+	document.getElementById("inap").style.color = "#82c3eb";
+	document.getElementById("message").style.color = "#82c3eb";
+	document.getElementById("events").style.color = "#82c3eb";
+	document.getElementById("edit").style.color = "#82c3eb";
+	document.getElementById("embed").style.color = "#82c3eb";
+	document.getElementById("promote").style.color = "#82c3eb";
+    document.getElementById("wiki").style.color = "#82c3eb";
+	document.getElementById("privacy").style.color = "#82c3eb";
+	document.getElementById("terms").style.color = "#82c3eb";
+	document.getElementById("safety").style.color = "#82c3eb";
+	document.getElementById("support").style.color = "#82c3eb";
+	document.getElementById("contact").style.color = "#82c3eb";
+}
+function opt22() {
+    document.getElementById("themes").style.color = "#43c359";
+	document.getElementById("title").style.color = "#43c359";
+	document.getElementById("help").style.color = "#43c359";
+	document.getElementById("trade").style.color = "#43c359";
+	document.getElementById("news").style.color = "#43c359";
+	document.getElementById("store").style.color = "#43c359";
+	document.getElementById("groups").style.color = "#43c359";
+	document.getElementById("inap").style.color = "#43c359";
+	document.getElementById("message").style.color = "#43c359";
+	document.getElementById("events").style.color = "#43c359";
+	document.getElementById("edit").style.color = "#43c359";
+	document.getElementById("embed").style.color = "#43c359";
+	document.getElementById("promote").style.color = "#43c359";
+    document.getElementById("wiki").style.color = "#43c359";
+	document.getElementById("privacy").style.color = "#43c359";
+	document.getElementById("terms").style.color = "#43c359";
+	document.getElementById("safety").style.color = "#43c359";
+	document.getElementById("support").style.color = "#43c359";
+	document.getElementById("contact").style.color = "#43c359";
+}
+function opt23() {
+    document.getElementById("themes").style.color = "#fef572";
+	document.getElementById("title").style.color = "#fef572";
+	document.getElementById("help").style.color = "#fef572";
+	document.getElementById("trade").style.color = "#fef572";
+	document.getElementById("news").style.color = "#fef572";
+	document.getElementById("store").style.color = "#fef572";
+	document.getElementById("groups").style.color = "#fef572";
+	document.getElementById("inap").style.color = "#fef572";
+	document.getElementById("message").style.color = "#fef572";
+	document.getElementById("events").style.color = "#fef572";
+	document.getElementById("edit").style.color = "#fef572";
+	document.getElementById("embed").style.color = "#fef572";
+	document.getElementById("promote").style.color = "#fef572";
+    document.getElementById("wiki").style.color = "#fef572";
+	document.getElementById("privacy").style.color = "#fef572";
+	document.getElementById("terms").style.color = "#fef572";
+	document.getElementById("safety").style.color = "#fef572";
+	document.getElementById("support").style.color = "#fef572";
+	document.getElementById("contact").style.color = "#fef572";
+}
+
+//Function for setting color manually of the links//
+function colmagenta() {
+    document.getElementById("themes").style.color = "magenta";
+	document.getElementById("title").style.color = "magenta";
+	document.getElementById("help").style.color = "magenta";
+	document.getElementById("trade").style.color = "magenta";
+	document.getElementById("news").style.color = "magenta";
+	document.getElementById("store").style.color = "magenta";
+	document.getElementById("groups").style.color = "magenta";
+	document.getElementById("inap").style.color = "magenta";
+	document.getElementById("message").style.color = "magenta";
+	document.getElementById("events").style.color = "magenta";
+	document.getElementById("edit").style.color = "magenta";
+	document.getElementById("embed").style.color = "magenta";
+	document.getElementById("promote").style.color = "magenta";
+    document.getElementById("wiki").style.color = "magenta";
+	document.getElementById("privacy").style.color = "magenta";
+	document.getElementById("terms").style.color = "magenta";
+	document.getElementById("safety").style.color = "magenta";
+	document.getElementById("support").style.color = "magenta";
+	document.getElementById("contact").style.color = "magenta";
+}
+function colyellow() {
+    document.getElementById("themes").style.color = "yellow";
+	document.getElementById("title").style.color = "yellow";
+	document.getElementById("help").style.color = "yellow";
+	document.getElementById("trade").style.color = "yellow";
+	document.getElementById("news").style.color = "yellow";
+	document.getElementById("store").style.color = "yellow";
+	document.getElementById("groups").style.color = "yellow";
+	document.getElementById("inap").style.color = "yellow";
+	document.getElementById("message").style.color = "yellow";
+	document.getElementById("events").style.color = "yellow";
+	document.getElementById("edit").style.color = "yellow";
+	document.getElementById("embed").style.color = "yellow";
+	document.getElementById("promote").style.color = "yellow";
+    document.getElementById("wiki").style.color = "yellow";
+	document.getElementById("privacy").style.color = "yellow";
+	document.getElementById("terms").style.color = "yellow";
+	document.getElementById("safety").style.color = "yellow";
+	document.getElementById("support").style.color = "yellow";
+	document.getElementById("contact").style.color = "yellow";
+}
+function colgreen() {
+   document.getElementById("themes").style.color = "green";
+	document.getElementById("title").style.color = "green";
+	document.getElementById("help").style.color = "green";
+	document.getElementById("trade").style.color = "green";
+	document.getElementById("news").style.color = "green";
+	document.getElementById("store").style.color = "green";
+	document.getElementById("groups").style.color = "green";
+	document.getElementById("inap").style.color = "green";
+	document.getElementById("message").style.color = "green";
+	document.getElementById("events").style.color = "green";
+	document.getElementById("edit").style.color = "green";
+	document.getElementById("embed").style.color = "green";
+	document.getElementById("promote").style.color = "green";
+    document.getElementById("wiki").style.color = "green";
+	document.getElementById("privacy").style.color = "green";
+	document.getElementById("terms").style.color = "green";
+	document.getElementById("safety").style.color = "green";
+	document.getElementById("support").style.color = "green";
+	document.getElementById("contact").style.color = "green";
+}
+function colwhite() {
+   document.getElementById("themes").style.color = "white";
+	document.getElementById("title").style.color = "white";
+	document.getElementById("help").style.color = "white";
+	document.getElementById("trade").style.color = "white";
+	document.getElementById("news").style.color = "white";
+	document.getElementById("store").style.color = "white";
+	document.getElementById("groups").style.color = "white";
+	document.getElementById("inap").style.color = "white";
+	document.getElementById("message").style.color = "white";
+	document.getElementById("events").style.color = "white";
+	document.getElementById("edit").style.color = "white";
+	document.getElementById("embed").style.color = "white";
+	document.getElementById("promote").style.color = "white";
+    document.getElementById("wiki").style.color = "white";
+	document.getElementById("privacy").style.color = "white";
+	document.getElementById("terms").style.color = "white";
+	document.getElementById("safety").style.color = "white";
+	document.getElementById("support").style.color = "white";
+	document.getElementById("contact").style.color = "white";
+}
+function colred() {
+   document.getElementById("themes").style.color = "red";
+	document.getElementById("title").style.color = "red";
+	document.getElementById("help").style.color = "red";
+	document.getElementById("trade").style.color = "red";
+	document.getElementById("news").style.color = "red";
+	document.getElementById("store").style.color = "red";
+	document.getElementById("groups").style.color = "red";
+	document.getElementById("inap").style.color = "red";
+	document.getElementById("message").style.color = "red";
+	document.getElementById("events").style.color = "red";
+	document.getElementById("edit").style.color = "red";
+	document.getElementById("embed").style.color = "red";
+	document.getElementById("promote").style.color = "red";
+    document.getElementById("wiki").style.color = "red";
+	document.getElementById("privacy").style.color = "red";
+	document.getElementById("terms").style.color = "red";
+	document.getElementById("safety").style.color = "red";
+	document.getElementById("support").style.color = "red";
+	document.getElementById("contact").style.color = "red";
+}
+function colblue() {
+   document.getElementById("themes").style.color = "#0CF";
+	document.getElementById("title").style.color = "#0CF";
+	document.getElementById("help").style.color = "#0CF";
+	document.getElementById("trade").style.color = "#0CF";
+	document.getElementById("news").style.color = "#0CF";
+	document.getElementById("store").style.color = "#0CF";
+	document.getElementById("groups").style.color = "#0CF";
+	document.getElementById("inap").style.color = "#0CF";
+	document.getElementById("message").style.color = "#0CF";
+	document.getElementById("events").style.color = "#0CF";
+	document.getElementById("edit").style.color = "#0CF";
+	document.getElementById("embed").style.color = "#0CF";
+	document.getElementById("promote").style.color = "#0CF";
+    document.getElementById("wiki").style.color = "#0CF";
+	document.getElementById("privacy").style.color = "#0CF";
+	document.getElementById("terms").style.color = "#0CF";
+	document.getElementById("safety").style.color = "#0CF";
+	document.getElementById("support").style.color = "#0CF";
+	document.getElementById("contact").style.color = "#0CF";
+}
+function colorange() {
+   document.getElementById("themes").style.color = "orange";
+	document.getElementById("title").style.color = "orange";
+	document.getElementById("help").style.color = "orange";
+	document.getElementById("trade").style.color = "orange";
+	document.getElementById("news").style.color = "orange";
+	document.getElementById("store").style.color = "orange";
+	document.getElementById("groups").style.color = "orange";
+	document.getElementById("inap").style.color = "orange";
+	document.getElementById("message").style.color = "orange";
+	document.getElementById("events").style.color = "orange";
+	document.getElementById("edit").style.color = "orange";
+	document.getElementById("embed").style.color = "orange";
+	document.getElementById("promote").style.color = "orange";
+    document.getElementById("wiki").style.color = "orange";
+	document.getElementById("privacy").style.color = "orange";
+	document.getElementById("terms").style.color = "orange";
+	document.getElementById("safety").style.color = "orange";
+	document.getElementById("support").style.color = "orange";
+	document.getElementById("contact").style.color = "orange";
+}
+
+
+//Function for setting color to blue when clicked
+
+
+function option1() {
+   document.getElementById("option1").style.color = "#0CF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option2() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "#0CF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option3() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "#0CF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option4() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "#0CF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option5() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "#0CF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option6() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "#0CF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option7() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "#0CF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option8() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "#0CF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option9() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "#0CF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option10() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "#0CF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option11() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "#0CF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option12() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "#0CF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option13() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "#0CF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option14() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "#0CF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option15() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "#0CF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option16() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "#0CF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option17() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "#0CF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option18() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "#0CF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option19() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "#0CF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option20() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "#0CF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option21() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "#0CF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option22() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "#0CF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option23() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "#0CF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option24() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "#0CF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option25() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "#0CF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option26() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "#0CF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option27() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "#0CF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option28() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "#0CF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option29() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "#0CF";
+   document.getElementById("option30").style.color = "FFFFFF";
+}
+function option30() {
+   document.getElementById("option1").style.color = "FFFFFF";
+   document.getElementById("option2").style.color = "FFFFFF";
+   document.getElementById("option3").style.color = "FFFFFF";
+   document.getElementById("option4").style.color = "FFFFFF";
+   document.getElementById("option5").style.color = "FFFFFF";
+   document.getElementById("option6").style.color = "FFFFFF";
+   document.getElementById("option7").style.color = "FFFFFF";
+   document.getElementById("option8").style.color = "FFFFFF";
+   document.getElementById("option9").style.color = "FFFFFF";
+   document.getElementById("option10").style.color = "FFFFFF";
+   document.getElementById("option11").style.color = "FFFFFF";
+   document.getElementById("option12").style.color = "FFFFFF";
+   document.getElementById("option13").style.color = "FFFFFF";
+   document.getElementById("option14").style.color = "FFFFFF";
+   document.getElementById("option15").style.color = "FFFFFF";
+   document.getElementById("option16").style.color = "FFFFFF";
+   document.getElementById("option17").style.color = "FFFFFF";
+   document.getElementById("option18").style.color = "FFFFFF";
+   document.getElementById("option19").style.color = "FFFFFF";
+   document.getElementById("option20").style.color = "FFFFFF";
+   document.getElementById("option21").style.color = "FFFFFF";
+   document.getElementById("option22").style.color = "FFFFFF";
+   document.getElementById("option23").style.color = "FFFFFF";
+   document.getElementById("option24").style.color = "FFFFFF";
+   document.getElementById("option25").style.color = "FFFFFF";
+   document.getElementById("option26").style.color = "FFFFFF";
+   document.getElementById("option27").style.color = "FFFFFF";
+   document.getElementById("option28").style.color = "FFFFFF";
+   document.getElementById("option29").style.color = "FFFFFF";
+   document.getElementById("option30").style.color = "#0CF";
+}
+</script>
+</div>
+
+<div name="chatbox">
+<img src="http://i.imgur.com/hqvYquh.png"/>
+</div>
+
+<div name="header"> 
 <ul> 
-<li><span style="font-family: arial black,avant garde; font-size: 12pt;">Vredjanje druge korisnike na osnovu verske, nacionalne, politicke, polne, regionalne, imovinske, sportske ili bilo koje druge pripadnosti ili orijentacije</span></li> 
-<li><span style="font-family: arial black,avant garde; font-size: 12pt;">Krse zakone koji se odnose na prava i zastitu dece</span></li> 
-<li><span style="font-family: arial black,avant garde; font-size: 12pt;">Objavljuju nerazumno velike kolicine teksta (floodanje)</span></li> 
-<li><span style="font-family: arial black,avant garde; font-size: 12pt;">Psuju i izrazavaju se na neugodan i neprimeren nacin</span></li> 
-<li><span style="font-family: arial black,avant garde; font-size: 12pt;">Nije dozvoljeno reklamirati druge stranice</span></li> 
-<li><span style="font-family: arial black,avant garde; font-size: 12pt;">Nije dozvoljeno postavljati slike koje imaju neprimeren sadrzaj</span></li> 
-<li><span style="font-family: arial black,avant garde; font-size: 12pt;">Vredjanje obitelji drugih korisnika, takodje se nece tolerisati</span></li> 
-<li><span style="font-family: arial black,avant garde; font-size: 12pt;">Koriste chat na nacin na koji nije predvidjeno da se koristi</span></li> 
+<a href="http://xat.com" target="_blank"><img src="http://i.imgur.com/Q3FRXbR.png"/></a>
+<h1 id="title">Btw</h1>
+  <li class="dropdown"> 
+    <a href="#" class="dropbtn" id="themes">Background    <div class="arrow-down"></div></a>
+    <div class="dropdown-content"> 
+    
+<div id="col1" onclick="colmagenta()">
+</div>
+<div id="col2" onclick="colyellow()">
+</div>
+<div id="col3" onclick="colgreen()">
+</div>
+<div id="col4" onclick="colwhite()">
+</div>
+<div id="col5" onclick="colred()">
+</div>
+<div id="col6" onclick="colblue()">
+</div>
+<div id="col7" onclick="colorange()">
+</div>
+
+<a id="option1" href="#none" onclick="option1();opt1();document.getElementById('hdr').className='hdr1'">Option 1</a>
+<a id="option2" href="#none" onclick="option2();opt2();document.getElementById('hdr').className='hdr2'">Option 2</a>
+<a id="option3" href="#none" onclick="option3();opt3();document.getElementById('hdr').className='hdr3'">Option 3</a>
+<a id="option4" href="#none" onclick="option4();opt4();document.getElementById('hdr').className='hdr4'">Option 4</a>
+<a id="option5" href="#none" onclick="option5();opt5();document.getElementById('hdr').className='hdr5'">Option 5</a>
+<a id="option6" href="#none" onclick="option6();opt6();document.getElementById('hdr').className='hdr6'">Option 6</a>
+<a id="option7" href="#none" onclick="option7();opt7();document.getElementById('hdr').className='hdr7'">Option 7</a>
+<a id="option8" href="#none" onclick="option8();opt8();document.getElementById('hdr').className='hdr8'">Option 8</a>
+<a id="option9" href="#none" onclick="option9();opt9();document.getElementById('hdr').className='hdr9'">Option 9</a>
+<a id="option10" href="#none" onclick="option10();opt10();document.getElementById('hdr').className='hdr10'">Option 10</a>
+<a id="option11" href="#none" onclick="option11();opt11();document.getElementById('hdr').className='hdr11'">Option 11</a>
+<a id="option12" href="#none" onclick="option12();opt12();document.getElementById('hdr').className='hdr12'">Option 12</a>
+<a id="option13" href="#none" onclick="option13();opt13();document.getElementById('hdr').className='hdr13'">Option 13</a>
+<a id="option14" href="#none" onclick="option14();opt14();document.getElementById('hdr').className='hdr14'">Option 14</a>
+<a id="option15" href="#none" onclick="option15();opt15();document.getElementById('hdr').className='hdr15'">Option 15</a>
+<a id="option16" href="#none" onclick="option16();opt16();document.getElementById('hdr').className='hdr16'">Option 16</a>
+<a id="option17" href="#none" onclick="option17();opt17();document.getElementById('hdr').className='hdr17'">Option 17</a>
+<a id="option18" href="#none" onclick="option18();opt18();document.getElementById('hdr').className='hdr18'">Option 18</a>
+<a id="option19" href="#none" onclick="option19();opt19();document.getElementById('hdr').className='hdr19'">Option 19</a>
+<a id="option20" href="#none" onclick="option20();opt20();document.getElementById('hdr').className='hdr20'">Option 20</a>
+<a id="option21" href="#none" onclick="option21();opt21();document.getElementById('hdr').className='hdr21'">Option 21</a>
+<a id="option22" href="#none" onclick="option22();opt22();document.getElementById('hdr').className='hdr22'">Option 22</a>
+<a id="option23" href="#none" onclick="option23();opt23();document.getElementById('hdr').className='hdr23'">Option 23</a>
+<a id="option24" href="#none" onclick="option24();document.getElementById('hdr').className='hdr24'">Option 24</a>
+<a id="option25" href="#none" onclick="option25();document.getElementById('hdr').className='hdr25'">Option 25</a>
+<a id="option26" href="#none" onclick="option26();document.getElementById('hdr').className='hdr26'">Option 26</a>
+<a id="option27" href="#none" onclick="option27();document.getElementById('hdr').className='hdr27'">Option 27</a>
+<a id="option28" href="#none" onclick="option28();document.getElementById('hdr').className='hdr28'">Option 28</a>
+<a id="option29" href="#none" onclick="option29();document.getElementById('hdr').className='hdr29'">Option 29</a>
+<a id="option30" href="#none" onclick="option30();document.getElementById('hdr').className='hdr30'">Option 30</a>
+
+    </div> 
+    
+     <li class="dropdown"> 
+    <a href="#" class="dropbtn2" id="themes">Themes <div class="arrow-down2"></div></a>
+    <div class="dropdown-content"> 
+<a href="#none">Night</a>
+
+</div>
+     
+  <li><a href="http://xat.com/Help_" target="_blank" id="help">Help</a></li> 
+  <li><a href="http://xat.com/Trade_" target="_blank" id="trade">Trade</a></li> 
+  <li><a href="http://xat.com/GetPowers" target="_blank" id="store">Store</a></li> 
+  <li><a href="http://xat.com/twitter" target="_blank" id="news">News</a></li> 
+  <li><a href="http://xat.com/groups.php" target="_blank" id="groups">Groups</a></li> 
 </ul> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Sva pravila odnose se na nickname koji odaberete prilikom prijave, upotrebu glavnog chat-a i privatnog chata.</span></p> 
-<h2><span style="font-family: arial black,avant garde; font-size: 12pt;">Upustva</span></h2> 
-<span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://i.imgur.com/2rN9suJ.jpg" alt="Vlasnik chata" border="0" /><span class="pns">Zlatni piun - Vlasnik</span></span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> <img src="http://i.imgur.com/eNLNVa2.jpg" alt="" border="0" /><span class="pns">Beli piun - Moderator</span></span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> <img src="http://i.imgur.com/0LEAJ7I.jpg" alt="" border="0" /><span class="pns">Plavi piun - Clan</span></span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> <img src="http://i.imgur.com/SIc2zz0.jpg" alt="" border="0" /><span class="pns">Zeleni piun - Gost</span></span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> <img src="http://i.imgur.com/zU9ZzXu.jpg" alt="" border="0" /><span class="pns">Crveni piun - Offline korisnici</span></span> 
-<h2><span style="font-family: arial black,avant garde; font-size: 12pt;">Kako promeniti chat ime?</span></h2> 
-<p> </p> 
-<span style="font-family: arial black,avant garde; font-size: 12pt;">Prilikom ulaska na chat, svaki korisnik dodeli se ime (nick) dodeljen od strane chat-a.</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Za promenu imena, kliknite na dodeljeni nick. (Vase ime je vama uvek prvi na listi)</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Nakon toga vam se otvori prozor prikazan na slici.</span> 
-<p> </p> 
-<span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://i.imgur.com/6N4ZzhX.jpg" alt="chat nick" border="0" /></span> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Pod <span style="font-weight: bold;">NAME</span> (BumpDumplings) - izbrisite dodeljeni nadimak, upisite svoj i stisnite <span style="font-weight: bold;">OK</span> na dnu prozora.</span></p> 
-<h2><span style="font-family: arial black,avant garde; font-size: 12pt;">KAKO POSTAVITI SLIKU NA NICK</span></h2> 
-<h2><span style="font-family: arial black,avant garde; font-size: 12pt;">PRVO UPUSTVO-Klikni na link ispod!</span></h2> 
-<p><img src="http://i.imgur.com/eL49XCT.gif" alt="" /><a href="http://screencast.com/users/Sasa1/folders/SASA/media/2514c0cd-c433-41ac-8e38-9e625ae493a0" target="blank">www.imgur.com</a><img src="http://i.imgur.com/eL49XCT.gif" alt="" /></p> 
-<h2><span style="font-family: arial black,avant garde; font-size: 12pt;">DRUGO UPUSTVO</span></h2> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Da ucitate svoju sliku, prvo je morate uplodati na</span></p> 
-<p><img src="http://i.imgur.com/83f3SUr.png" alt="" /><a href="http://tinypic.com" target="blank">www.tinypic.com</a><img src="http://i.imgur.com/83f3SUr.png" alt="" /></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Upload slike je vrlo jednostavan.</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Nakon sto udjete na ponudjenju stranicu, kliknite na "<span style="font-weight: bold;">Pregled...</span>".</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Zatim odaberite iz datoteke na svom <span style="font-weight: bold;">PC</span>-u koju sliku zelite i kliknite na <span style="font-weight: bold;">0pen</span> (Dodavanje).</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> I na kraju kliknite "<span style="font-weight: bold;">UPLOAD NOW</span>".</span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://i.imgur.com/G8dQjGo.jpg" alt="slike na chat 1" border="0" /></span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Pricekajte trenutak da slika bude uploadana.</span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://i.imgur.com/8Lu415L.jpg" alt="slike na chat 2" border="0" /></span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Kad je uploadanje zavrseno, dobit cete nekoliko linkova. Kopirajte "<span style="font-weight: bold;">Direct Link for Layouts</span>"</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Zatim se vratite na chat, kliknite na svoj ime u novom prozoru, izbrisite broj slike dodeljene od chata i prekopirajte link u polje pokraj "<span style="font-weight: bold;">SLIKA</span>".</span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://imgur.com/SY9HUdr.jpg" alt="slike na chat 3" border="0" /></span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Nakon toga stisnite <span style="font-weight: bold;">OK</span> na dnu prozora.</span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://i.imgur.com/jF97sDa.jpg" alt="ok gumb na chatu" border="0" /></span></p> 
-<h2><span style="font-family: arial black,avant garde; font-size: 12pt;">Kako dodati nekog za prijatelja?</span></h2> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Kliknite na ime osobe koju zelite dodati i kliknite "<span style="font-weight: bold;">DODAJ KAO PRIJATELJA</span>".</span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://i.imgur.com/RrgAlNq.jpg" alt="dodaj prijatelja na chatu" border="0" /></span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Dodavanjem korisnika na <span style="font-weight: bold;">Friend Listu</span>, dobivate mogucnost da vidite je li <span style="font-weight: bold;">0nline</span> cak i ako niste u istoj sobi na chatu te da ga kontaktirate preko privatnog chata.</span></p> 
-<h2><span style="font-family: arial black,avant garde; font-size: 12pt;">Kako registrovati nick?</span></h2> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Za registraciju, kliknite na svoje ime a zatim na "<span style="font-weight: bold;">REGISTER</span>"</span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://i.imgur.com/UM1rVcH.jpg" alt="registruj se na chat" border="0" /></span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Nakon toga otvorit ce vam se novi prozor, koji izgleda ovako.</span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://i.imgur.com/qsCDN5A.jpg" alt="registriraj se na chat korak 1" border="0" /></span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Pod <span style="font-weight: bold;">USERNAME</span> - upisite svoje korisnicko ime. Ime mora imati minimalno 10 i maximalno 18 slova.</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Koristiti mozete samo slova (A-Z) i brojeve (0-9).</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Pod <span style="font-weight: bold;">Password</span> - upisite zeljenu lozinku. Lozinka mora imati minimalno 6 znakova. </span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Koristiti mozete samo slova (A-Z) i brojeve (0-9).</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> U drugo polje "<span style="font-weight: bold;">Password</span>" jos jednom upisite istu lozinku.</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Pod <span style="font-weight: bold;">E-mail</span> - upisite vasu validnu E-mail adresu.</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> <span style="font-weight: bold;">Kvacicom oznacite</span> da ste stariji od 14 godina.</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Nakon toga kliknite na <span style="font-weight: bold;">Register</span>.</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Ukoliko ste sva polja pravilno ispunili, dobit cete <span style="font-weight: bold;">mail sa linkom</span> za potvrdu registracije.</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Kliknite na dobiveni<span style="font-weight: bold;"> link</span> u mail-u i vasa registracija je zavrsena.</span></p> 
-<h2><span style="font-family: arial black,avant garde; font-size: 12pt;">cemu sluzi registracija?</span></h2> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Registracija pamti vas nadimak, sliku, friends listu i rank na chatu.</span></p> 
-<h2><span style="font-family: arial black,avant garde; font-size: 12pt;">Kako se ulogovati na svoju registraciju?</span></h2> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Kliknite na svoje <span style="font-weight: bold;">ime</span>, zatim u novom prozoru na "<span style="font-weight: bold;">Register</span>".</span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://i.imgur.com/aCrO45o.png" alt="registriraj se na chat korak 2" border="0" /></span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">U novom prozoru kliknite na "Login with a xat ID"</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Nakon toga samo upisite podatke od svoje registracije.</span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;"><img src="http://i.imgur.com/jb8lNJu.jpg" alt="registuj se se na chat korak 3" border="0" /></span></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Pod "<span style="font-weight: bold;">XAT NAME</span>" - upisite vase korisnicko ime.</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Pod "<span style="font-weight: bold;">PASSWORD</span>" - upisite vasu lozinku.</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Nakon toga kliknite na "<span style="font-weight: bold;">Login</span>".</span><br /><span style="font-family: arial black,avant garde; font-size: 12pt;"> Ako ste sve tacno upisali, dobit cete obavestenje o uspesnom logovanju, koja izgleda ovako:</span></p> 
-<p><img src="http://i.imgur.com/0zXCLLz.jpg" alt="registruj se na chat korak 4" border="0" /></p> 
-<p><span style="font-family: arial black,avant garde; font-size: 12pt;">Za sva ostala pitanja kontaktirajte <span style="font-weight: bold;">ADMINE</span> na chatu!</span></p> 
-<p> </p> 
-<div id="footer"> 
-<p> </p> 
-<p>Copyright © 2008 <a title="Chat" href="/www.romskosrce.com">RADIO-RomskoSrce</a></p> 
 </div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</td> 
-</tr> 
-</tbody> 
-</table> 
-</td> 
-</body>
-</html>
+
+<div name="metroid">
+<img src="http://i.imgur.com/oLdmZgc.gif" height="80px"/>
+</div>
+
+<div name="apps">
+<img src="http://i.imgur.com/QKTXl69.png"/>
+</div>
+ 
+ <div name="banner">
+<img src="http://i.imgur.com/cbSg7Oq.png"/>
+</div>
+
+<div name="speech">
+<img src="http://i.imgur.com/hCtxqU4.gif" height="30px"/>
+</div>
+
+<div name="bannerimg">
+<img src="http://i.imgur.com/QOq8zR0.gif" height="220px"/>
+</div>
+
+<div name="door">
+<img src="http://i.imgur.com/iRorGbN.png" height="50"/>
+</div>
+
+<div name="vase">
+<img src="http://i.imgur.com/XzDNE1P.png" height="70"/>
+</div>
+
+<div name="egg">
+<a href="https://www.youtube.com/watch?v=OM-3R_jaiNg" target="blank"><img src="http://i.imgur.com/ejO9ZVW.gif" height="40" />
+</div>
+ 
+ 
+ 
+<div name="editbar">
+<ul>
+  <li><a href="default.asp"></a></li>
+  <li><a href="http://xat.com/web_gear/chat/inappropriate.php?id=26990215&GroupName=Btw" target="_blank" id="inap">Inappropriate</a></li>
+  <li><a href="http://xat.com/web_gear/chat/ownerfeedback.php?GroupName=Btw" target="_blank" id="message">Message</a></li>
+  <li><a href="http://xat.com/web_gear/chat/events.php?roomid=26990215&GroupName=Btw" target="_blank" id="events">Events</a></li>
+  <li><a href="http://xat.com/web_gear/chat/editgroup.php?GroupName=Btw" target="_blank" id="edit">Edit</a></li>
+  <li style="float:left"><a href="http://xat.com/web_gear/chat/embed.php?id=26990215&GroupName=BTW" target="_blank" id="embed">Embed</a></li>
+    <li style="float:left"><a href="http://xat.com/web_gear/chat/promotion.php" target="_blank" id="promote">Promote</a></li>
+
+</ul>
+</div>
+ 
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br> 
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br> 
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br> 
+<p></p> 
+ 
+<div name="footer"> 
+<ul> 
+  <li><a href="http://xat.com/wiki" target="_blank" id="wiki">Wiki</a></li> 
+  <li><a href="http://xat.com/privacy.html" target="_blank" id="privacy">Privacy</a></li> 
+  <li><a href="http://xat.com/terms.html" target="_blank" id="terms">Terms</a></li> 
+  <li><a href="http://util.xat.com/wiki/index.php?title=Safety" target="_blank" id="safety">Safety</a></li> 
+  <li><a href="http://xat.com/support" target="_blank" id="support">Support</a></li> 
+  <li><a href="http://xat.com/ticket" target="_blank" id="contact">Contact</a></li> 
+  <p>©2016 xat.com Ltd. All rights reserved.</p> 
+</ul> 
+</div>
